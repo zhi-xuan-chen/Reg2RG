@@ -1,0 +1,120 @@
+Accuracy for each sample:
+Mean accuracy: 0.8945488721804512
+Standard deviation: 0.15852179856679136
+
+Precision, recall and F1 score for each region:
+abdomen:
+Precision: 0.6718749650065122
+Recall: 0.9347825409577869
+F1 score: 0.7818132683498329
+
+bone:
+Precision: 0.8333331597222583
+Recall: 0.39603956474855795
+F1 score: 0.5369083122735521
+
+breast:
+Precision: 0.24999937500156252
+Recall: 0.0999999000001
+F1 score: 0.14285285725713986
+
+esophagus:
+Precision: 0.0
+Recall: 0.0
+F1 score: 0.0
+
+heart:
+Precision: 0.9914039830543272
+Recall: 0.9801699439045343
+F1 score: 0.9857499578584948
+
+lung:
+Precision: 0.9972298892734104
+Recall: 0.9972298892734104
+F1 score: 0.9972248892984796
+
+mediastinum:
+Precision: 0.8031914466387529
+Recall: 0.8934910713910609
+F1 score: 0.8459333421505489
+
+pleura:
+Precision: 0.799999911111121
+Recall: 0.7741934651404876
+F1 score: 0.7868801612787392
+
+thyroid:
+Precision: 0.49999958333368055
+Recall: 0.39999973333351113
+F1 score: 0.4444391770097541
+
+trachea:
+Precision: 0.0
+Recall: 0.0
+F1 score: 0.0
+
+Precision of all regions: 0.5062253140946367±0.35990366819784914
+Recall of all regions: 0.46306034429194387±0.3943865261922319
+F1 score of all regions: 0.46721211436241533±0.3637383268862299
+
+FP and FN accnums for each region:
+Region: abdomen
+False positive accnums: [591, 1772, 712, 752, 804, 1031, 116, 1351, 368, 749, 1393, 90, 1337, 765, 842, 776, 995, 926, 1113, 828, 1251, 150, 1557, 210, 489, 531, 378, 6, 113, 950, 1017, 30, 29, 240, 1144, 1368, 1509, 1580, 293, 1126, 1024, 431, 1149, 874, 666, 108, 1294, 580, 239, 250, 1572, 1107, 425, 1345, 1189, 583, 1512, 458, 1667, 130, 1015, 1531, 1260]
+
+Region: bone
+False positive accnums: [794, 456, 1557, 6, 1376, 140, 911, 229]
+
+Region: breast
+False positive accnums: [748, 129, 1477]
+
+Region: esophagus
+False positive accnums: [1283, 1336, 456, 384, 400, 129, 302, 1259, 668, 251, 423, 1461]
+
+Region: heart
+False positive accnums: [514, 643, 1032]
+
+Region: lung
+False positive accnums: [643]
+
+Region: mediastinum
+False positive accnums: [1772, 514, 804, 722, 1354, 1283, 427, 1671, 1029, 1694, 1273, 1753, 456, 1621, 400, 129, 626, 517, 419, 505, 155, 1259, 668, 1367, 251, 1036, 1116, 799, 1593, 612, 1646, 1293, 1032, 1495, 180, 311, 1477]
+
+Region: pleura
+False positive accnums: [514, 804, 1336, 1242, 456, 451, 129, 1475, 1006, 1741, 1601, 1116, 1249, 468, 1646, 399, 1293, 311]
+
+Region: thyroid
+False positive accnums: [749, 456, 88, 1259, 799, 902]
+
+Region: trachea
+False positive accnums: [1762]
+
+Region: abdomen
+False negative accnums: [794, 456, 451, 1006, 1557, 6, 1376, 140, 229]
+
+Region: bone
+False negative accnums: [591, 1772, 712, 752, 804, 1031, 116, 1351, 368, 749, 1393, 90, 1337, 765, 842, 776, 995, 926, 1113, 828, 1251, 150, 1557, 210, 489, 531, 378, 6, 113, 950, 1017, 30, 240, 1144, 1368, 1509, 1580, 293, 1126, 1024, 431, 1149, 874, 108, 1294, 580, 239, 250, 1572, 1107, 425, 1345, 1189, 583, 1512, 458, 1667, 130, 1015, 1531, 1260]
+
+Region: breast
+False negative accnums: [804, 1242, 384, 400, 129, 626, 1036, 399, 1477]
+
+Region: esophagus
+False negative accnums: [1354, 1283, 1029, 1273, 456, 129, 1259, 668, 799, 311]
+
+Region: heart
+False negative accnums: [1772, 514, 1336, 643, 251, 666, 1032]
+
+Region: lung
+False negative accnums: [643]
+
+Region: mediastinum
+False negative accnums: [514, 804, 1283, 749, 456, 400, 129, 1475, 88, 1259, 668, 251, 1116, 1249, 468, 1646, 1293, 311]
+
+Region: pleura
+False negative accnums: [514, 722, 427, 1694, 1762, 748, 1753, 456, 129, 302, 419, 155, 29, 423, 1116, 1461, 1646, 1293, 902, 180, 911]
+
+Region: thyroid
+False negative accnums: [1336, 456, 517, 505, 1741, 1601, 799, 1495, 1477]
+
+Region: trachea
+False negative accnums: [1671, 1621, 1259, 1367, 1593, 612, 1032]
+

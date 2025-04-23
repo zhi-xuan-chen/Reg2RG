@@ -1,0 +1,43 @@
+AccNum,GT_combined_report,Pred_combined_report
+valid_1234_a_1.nii.gz,There is a hypodense nodule with a diameter of 10 mm in the right thyroid lobe.,The size of the thyroid gland has increased.
+valid_2_a_1.nii.gz,"On the right, both thyroid glands have increased in size and their parenchyma is heterogeneous.",US control is recommended.
+valid_1041_c_1.nii.gz,"In the thyroid gland, hypertrophy and mild parenchymal heterogeneity are observed in both lobes.",Thyroid gland dimensions are increased.
+valid_1041_a_1.nii.gz,Both lobes are prominent in the thyroid gland.,It is recommended to be evaluated together with US.
+valid_86_a_1.nii.gz,Several nodules up to 14 mm in size are observed in both thyroid lobes.,The thyroid is larger than normal.
+valid_323_a_1.nii.gz,It is recommended to be evaluated together with breast US. Thyroid gland sizes increased.,"There is a nodule in the right thyroid lobe, measuring approximately 25 mm in diameter, with a hypodense center."
+valid_368_a_1.nii.gz,Metallic artifacts are observed anteriorly at the level of the thyroid cartilages.,US control is recommended.
+valid_1006_a_1.nii.gz,Millimetric calcific foci are observed in the thyroid parenchyma.,It is recommended to be evaluated together with US.
+valid_822_a_1.nii.gz,Thyroid gland sizes are below normal.,It is recommended to be evaluated together with US.
+valid_291_a_1.nii.gz,The thyroid gland extends to the thoracic inlet of the right lobe and there is heterogeneity covering almost the entire lobe. When examined in the lung parenchyma window; The trachea appears to be displaced to the left due to the large nodule defined in the right lobe of the thyroid gland.,It is recommended to be evaluated together with USG examination. Thyroid gland sizes are increased.
+valid_952_a_1.nii.gz,A hypodense nodule with a diameter of 9 mm was observed in the left thyroid lobe.,The dimensions of the thyroid gland have increased and nodular formation is observed in its periphery.
+valid_1175_a_1.nii.gz,Both thyroid gland sizes are increased. US control is recommended.,A well-defined hypodense nodule with a diameter of 16 mm was observed in the left thyroid lobe.
+valid_1253_a_1.nii.gz,A mass with an unclear border extending from the left lobe of the thyroid gland to the esophagus is observed.,USG correlation is recommended.
+valid_589_a_1.nii.gz,Thyroid gland sizes are natural.,It is recommended to be evaluated together with US.
+valid_846_a_1.nii.gz,"Both thyroid lobes parenchyma are heterogeneous, and a few calcific nodules, some of which are 1.5 cm in diameter, are observed on the left.",The thyroid gland is heterogeneous.
+valid_876_b_1.nii.gz,There are calcific nodules in the thyroid gland.,The thyroid gland is larger than normal and nodular in appearance.
+valid_876_a_1.nii.gz,There are calcific nodules in the thyroid gland.,The thyroid gland has a heterogeneous appearance.
+valid_1128_a_1.nii.gz,The thyroid parenchyma has a slightly heterogeneous and hypertrophic appearance and contains microcalcifications. USG correlation is recommended for a parenchymal disease.,It is recommended to be evaluated together with US. The thyroid gland has a heterogeneous appearance.
+valid_1280_a_1.nii.gz,Thyroid parenchyma is hypertrophic.,It is recommended to be evaluated together with US.
+valid_403_a_1.nii.gz,The dimensions of the thyroid gland appear natural.,A hypodense nodule with a diameter of 10 mm was observed in the right thyroid lobe.
+valid_9_a_1.nii.gz,The left thyroid lobe extends through the vascular structures to the mediastinal inlet. The size of the thyroid gland has increased and has a heterogeneous appearance. Trachea is narrowed in the superior part secondary to thyroid compression.,There is a hypodense nodule with a diameter of 1 cm in the right thyroid lobe.
+valid_38_a_1.nii.gz,The size of the thyroid gland has increased and has a heterogeneous appearance. It is recommended to be evaluated together with US.,It is recommended to be evaluated together with US.
+valid_446_a_1.nii.gz,A nodular lesion with a similar character of 18 mm in diameter is observed in the posterior of this nodule. It was thought that it may belong to a thyroid nodule.,USG verification is recommended.
+valid_999_a_1.nii.gz,"In the thyroid gland, both lobes are observed to be larger than normal. If necessary, USG examination is recommended.",It is recommended to be evaluated together with US.
+valid_1142_a_1.nii.gz,The size of the thyroid gland has increased.,USG correlation is recommended.
+valid_207_a_1.nii.gz,The size of the right thyroid gland increased and calcific nodules were observed in both thyroid glands.,The described appearance was evaluated in favor of a cyst.
+valid_1116_a_1.nii.gz,An exophytic thyroid nodule extending from the thyroid gland to the mediastinum was observed.,US control is recommended.
+valid_817_a_1.nii.gz,As far as can be observed: Calcified hypodense nodules observed on the left in both thyroid lobes.,It is recommended to be evaluated together with USG.
+valid_1123_a_1.nii.gz,"In the left lobe of the thyroid gland, there is no hypodense lesion nodule with a diameter of approximately 18 mm with millimetric calcifications. Hypodense millimetric nodules are observed in the parenchyma in the right lobe.",Thyroid gland sizes increased.
+valid_1067_b_1.nii.gz,There is a hypodense nodule in the left lobe of the thyroid gland.,There is an increase in the size of both thyroid lobes and a heterogeneous appearance in the parenchyma.
+valid_687_a_1.nii.gz,The parenchyma of the thyroid gland is slightly heterogeneous in the right lobe.,The size of the thyroid gland has increased and its parenchyma density is heterogeneous.
+valid_523_a_1.nii.gz,The size of the thyroid gland has increased.,It is recommended to evaluate the patient with USG examination. Both thyroid lobes are larger than normal and there is a hypodense appearance in the right lobe.
+valid_781_a_1.nii.gz,The size of the thyroid gland and isthmus increased.,It is recommended to evaluate and follow up with USG examination.
+valid_717_a_1.nii.gz,"Both thyroid glands are larger than normal and several hypodense nodules are observed, the largest of which is 2 cm in diameter in the right thyroid gland; USG verification is recommended.",It is recommended to be evaluated together with USG. Both thyroid lobes and isthmus are enlarged.
+valid_1267_a_1.nii.gz,"The dimensions of the left lobe of the thyroid gland increased, and a hypodense nodule was observed in the left lobe.",A hypodense nodule with a diameter of 13 mm was observed in the left thyroid lobe. US control is recommended.
+valid_845_a_1.nii.gz,Millimetric nodules are observed in the thyroid gland.,The thyroid gland is larger than normal and has a heterogeneous appearance.
+valid_586_a_1.nii.gz,Nodules with faint borders are observed in the parenchyma. The size of the thyroid gland has increased. Its contours are lobulated.,It is recommended to be evaluated together with US.
+valid_650_a_1.nii.gz,Thyroid gland is atrophic.,There is a hypodense nodule with a diameter of 11 mm in the right thyroid lobe.
+valid_859_a_1.nii.gz,The dimensions and contours of the thyroid gland appear natural.,The size of the thyroid gland has increased.
+valid_275_a_1.nii.gz,"The dimensions of the thyroid gland have increased, and a hypodense nodule of 30x40 mm, extending towards the mediastinum, is observed in the left lobe.",It is recommended to evaluate the patient with USG. The thyroid gland is larger than normal and heterogeneous in appearance.
+valid_277_g_1.nii.gz,"There are several nodules with a diameter of 12 mm in the left lobe and isthmus of the thyroid gland, and the largest in the isthmus.",The thyroid gland is larger than normal and has a heterogeneous appearance.
+valid_1027_a_1.nii.gz,Thyroid lobe sizes increased. It is recommended to be evaluated together with USG.,It is recommended to be evaluated together with US.

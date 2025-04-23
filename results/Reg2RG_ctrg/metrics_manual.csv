@@ -1,0 +1,20 @@
+Label,Precision,Recall,F1 Score,Support
+Medical material,0.0,0.0,0.0,9
+Arterial wall calcification,0.0,0.0,0.0,11
+Cardiomegaly,0.0,0.0,0.0,10
+Pericardial effusion,0.0,0.0,0.0,9
+Coronary artery wall calcification,0.0,0.0,0.0,14
+Hiatal hernia,0.0,0.0,0.0,0
+Lymphadenopathy,0.0,0.0,0.0,54
+Emphysema,0.0,0.0,0.0,5
+Atelectasis,0.0,0.0,0.0,0
+Lung nodule,0.5576923076923077,0.41232227488151657,0.47411444141689374,211
+Lung opacity,0.42857142857142855,0.056074766355140186,0.09917355371900825,107
+Pulmonary fibrotic sequela,0.0,0.0,0.0,5
+Pleural effusion,0.5,0.025,0.047619047619047616,40
+Mosaic attenuation pattern,0.0,0.0,0.0,2
+Peribronchial thickening,0.0,0.0,0.0,1
+Consolidation,0.0,0.0,0.0,15
+Bronchiectasis,0.0,0.0,0.0,11
+Interlobular septal thickening,0.0,0.0,0.0,5
+Weighted Average,0.36057017638550054,0.18467583497053044,0.2211286430091559,509
