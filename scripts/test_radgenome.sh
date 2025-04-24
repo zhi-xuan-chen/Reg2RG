@@ -26,6 +26,5 @@ CUDA_VISIBLE_DEVICES=$cuda_devices python ../src/${script_name}.py \
     --data_folder "$data_folder" \
     --mask_folder "$mask_folder" \
     --report_file "$report_file" \
-    --wrong_path "$wrong_path" \
     --monai_cache_dir "$monai_cache_dir" \
     --result_path "$result_path"

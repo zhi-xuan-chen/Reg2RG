@@ -5,7 +5,7 @@ from typing import List, Optional, Tuple, Union
 import transformers
 from dataclasses import dataclass, field
 from Model.RegionRG_MaskEncoder_best.multimodality_model import RegionLLM
-from Dataset.radgenome_dataset_test import RadGenomeDataset_Combined_Region_Image_Mask_Test
+from Dataset.radgenome_dataset_test import RadGenomeDataset_Test
 # from args.test_combined_region_radgenome.superpod import ModelArguments, DataArguments
 from args.test_combined_region_radgenome.jhcpu1 import ModelArguments, DataArguments
 import torch
@@ -112,12 +112,11 @@ def main():
         inferenced_id = []
 
     print("Setup Data")
-    Test_dataset = RadGenomeDataset_Combined_Region_Image_Mask_Test(
+    Test_dataset = RadGenomeDataset_Test(
         text_tokenizer=model_args.tokenizer_path,
         data_folder=data_args.data_folder,
         mask_folder=data_args.mask_folder,
         csv_file=data_args.report_file,
-        wrong_path=data_args.wrong_path,
         cache_dir=data_args.monai_cache_dir,
         inferenced_id = inferenced_id
     )

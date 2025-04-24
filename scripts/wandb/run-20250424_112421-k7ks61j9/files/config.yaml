@@ -1,0 +1,384 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.19
+    cli_version: 0.16.1
+    framework: huggingface
+    huggingface_version: 4.28.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1745465061.150085
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 48
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 98
+      2:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 48
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 98
+      3:
+      - 7
+      - 13
+      - 23
+      4: 3.9.19
+      5: 0.16.1
+      6: 4.28.1
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: train/global_step
+      6:
+      - 3
+output_dir:
+  desc: null
+  value: /jhcnas5/chenzhixuan/checkpoints/Reg2RG/outputs/Reg2RG_radgenome
+overwrite_output_dir:
+  desc: null
+  value: false
+do_train:
+  desc: null
+  value: false
+do_eval:
+  desc: null
+  value: false
+do_predict:
+  desc: null
+  value: false
+evaluation_strategy:
+  desc: null
+  value: 'no'
+prediction_loss_only:
+  desc: null
+  value: false
+per_device_train_batch_size:
+  desc: null
+  value: 1
+per_device_eval_batch_size:
+  desc: null
+  value: 8
+per_gpu_train_batch_size:
+  desc: null
+  value: None
+per_gpu_eval_batch_size:
+  desc: null
+  value: None
+gradient_accumulation_steps:
+  desc: null
+  value: 8
+eval_accumulation_steps:
+  desc: null
+  value: None
+eval_delay:
+  desc: null
+  value: 0
+learning_rate:
+  desc: null
+  value: 5.0e-05
+weight_decay:
+  desc: null
+  value: 0.0
+adam_beta1:
+  desc: null
+  value: 0.9
+adam_beta2:
+  desc: null
+  value: 0.999
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+max_grad_norm:
+  desc: null
+  value: 1.0
+num_train_epochs:
+  desc: null
+  value: 10.0
+max_steps:
+  desc: null
+  value: -1
+lr_scheduler_type:
+  desc: null
+  value: constant_with_warmup
+warmup_ratio:
+  desc: null
+  value: 0.0
+warmup_steps:
+  desc: null
+  value: 20
+log_level:
+  desc: null
+  value: passive
+log_level_replica:
+  desc: null
+  value: warning
+log_on_each_node:
+  desc: null
+  value: true
+logging_dir:
+  desc: null
+  value: /jhcnas5/chenzhixuan/checkpoints/Reg2RG/outputs/Reg2RG_radgenome/runs/Apr24_11-22-10_jhcpu7
+logging_strategy:
+  desc: null
+  value: steps
+logging_first_step:
+  desc: null
+  value: false
+logging_steps:
+  desc: null
+  value: 1
+logging_nan_inf_filter:
+  desc: null
+  value: true
+save_strategy:
+  desc: null
+  value: epoch
+save_steps:
+  desc: null
+  value: 500
+save_total_limit:
+  desc: null
+  value: 3
+save_safetensors:
+  desc: null
+  value: false
+save_on_each_node:
+  desc: null
+  value: false
+no_cuda:
+  desc: null
+  value: false
+use_mps_device:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 42
+data_seed:
+  desc: null
+  value: None
+jit_mode_eval:
+  desc: null
+  value: false
+use_ipex:
+  desc: null
+  value: false
+bf16:
+  desc: null
+  value: true
+fp16:
+  desc: null
+  value: false
+fp16_opt_level:
+  desc: null
+  value: O1
+half_precision_backend:
+  desc: null
+  value: cuda_amp
+bf16_full_eval:
+  desc: null
+  value: false
+fp16_full_eval:
+  desc: null
+  value: false
+tf32:
+  desc: null
+  value: None
+local_rank:
+  desc: null
+  value: 0
+xpu_backend:
+  desc: null
+  value: None
+tpu_num_cores:
+  desc: null
+  value: None
+tpu_metrics_debug:
+  desc: null
+  value: false
+debug:
+  desc: null
+  value: '[]'
+dataloader_drop_last:
+  desc: null
+  value: false
+eval_steps:
+  desc: null
+  value: None
+dataloader_num_workers:
+  desc: null
+  value: 8
+past_index:
+  desc: null
+  value: -1
+run_name:
+  desc: null
+  value: Reg2RG_radgenome
+disable_tqdm:
+  desc: null
+  value: false
+remove_unused_columns:
+  desc: null
+  value: true
+label_names:
+  desc: null
+  value: None
+load_best_model_at_end:
+  desc: null
+  value: false
+metric_for_best_model:
+  desc: null
+  value: None
+greater_is_better:
+  desc: null
+  value: None
+ignore_data_skip:
+  desc: null
+  value: false
+sharded_ddp:
+  desc: null
+  value: '[]'
+fsdp:
+  desc: null
+  value: '[]'
+fsdp_min_num_params:
+  desc: null
+  value: 0
+fsdp_config:
+  desc: null
+  value: '{''fsdp_min_num_params'': 0, ''xla'': False, ''xla_fsdp_grad_ckpt'': False}'
+fsdp_transformer_layer_cls_to_wrap:
+  desc: null
+  value: None
+deepspeed:
+  desc: null
+  value: /home/chenzhixuan/Workspace/Reg2RG/ds_configs/stage2.json
+label_smoothing_factor:
+  desc: null
+  value: 0.0
+optim:
+  desc: null
+  value: adamw_torch
+optim_args:
+  desc: null
+  value: None
+adafactor:
+  desc: null
+  value: false
+group_by_length:
+  desc: null
+  value: false
+length_column_name:
+  desc: null
+  value: length
+report_to:
+  desc: null
+  value: '[''tensorboard'', ''wandb'']'
+ddp_find_unused_parameters:
+  desc: null
+  value: None
+ddp_bucket_cap_mb:
+  desc: null
+  value: None
+dataloader_pin_memory:
+  desc: null
+  value: true
+skip_memory_metrics:
+  desc: null
+  value: true
+use_legacy_prediction_loop:
+  desc: null
+  value: false
+push_to_hub:
+  desc: null
+  value: false
+resume_from_checkpoint:
+  desc: null
+  value: None
+hub_model_id:
+  desc: null
+  value: None
+hub_strategy:
+  desc: null
+  value: every_save
+hub_token:
+  desc: null
+  value: <HUB_TOKEN>
+hub_private_repo:
+  desc: null
+  value: false
+gradient_checkpointing:
+  desc: null
+  value: false
+include_inputs_for_metrics:
+  desc: null
+  value: false
+fp16_backend:
+  desc: null
+  value: auto
+push_to_hub_model_id:
+  desc: null
+  value: None
+push_to_hub_organization:
+  desc: null
+  value: None
+push_to_hub_token:
+  desc: null
+  value: <PUSH_TO_HUB_TOKEN>
+mp_parameters:
+  desc: null
+  value: ''
+auto_find_batch_size:
+  desc: null
+  value: false
+full_determinism:
+  desc: null
+  value: false
+torchdynamo:
+  desc: null
+  value: None
+ray_scope:
+  desc: null
+  value: last
+ddp_timeout:
+  desc: null
+  value: 1800
+torch_compile:
+  desc: null
+  value: false
+torch_compile_backend:
+  desc: null
+  value: None
+torch_compile_mode:
+  desc: null
+  value: None
+cache_dir:
+  desc: null
+  value: None
+pin_memory:
+  desc: null
+  value: true
+train_batch_size:
+  desc: null
+  value: 1
+eval_batch_size:
+  desc: null
+  value: 8

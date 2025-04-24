@@ -11,5 +11,4 @@ ckpt_path="/jhcnas5/chenzhixuan/checkpoints/FineGrainedCTRG/outputs/Reg2RG_radge
 data_folder='/data/chenzhixuan/data/RadGenome-ChestCT/dataset/valid_preprocessed'
 mask_folder='/data/chenzhixuan/data/RadGenome-ChestCT/dataset/valid_region_mask'
 report_file='/data/chenzhixuan/data/RadGenome-ChestCT/dataset/radgenome_files/validation_region_report.csv'
-wrong_path='/jhcnas5/chenzhixuan/data/RadGenome-ChestCT/processed_code/wrong_files/train_wrong_cases.json' # useless now
-result_path='/home/chenzhixuan/Workspace/FineGrainedCTRG/results/Reg2RG_radgenome/regionRG-radfm_radgenome_mask-crop-regions-image_remain_wrong.csv'
+result_path='/home/chenzhixuan/Workspace/FineGrainedCTRG/results/original_grounding_reports.csv'

@@ -103,11 +103,6 @@ def main():
         cache_dir=data_args.monai_cache_dir,
     )
 
-    # loader = torch.utils.data.DataLoader(
-    #     Train_dataset, batch_size=2, shuffle=False, num_workers=0, collate_fn=DataCollator())
-    # for batch in tqdm.tqdm(loader):
-    #     pass
-
     print("Setup Model")
     model = Reg2RG(
         lang_model_path=model_args.lang_encoder_path,
@@ -115,12 +110,6 @@ def main():
         pretrained_visual_encoder=model_args.pretrained_visual_encoder,
         pretrained_adapter=model_args.pretrained_adapter,
     )
-
-    # loader = torch.utils.data.DataLoader(
-    #     Train_dataset, batch_size=2, shuffle=False, num_workers=0, collate_fn=DataCollator())
-    # for batch in tqdm.tqdm(loader):
-    #     model(**batch)
-    #     pass
     
     trainer = Trainer(model=model, 
                       train_dataset = Train_dataset, 
