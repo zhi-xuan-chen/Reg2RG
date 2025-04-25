@@ -4,10 +4,10 @@ from typing import Optional, Dict, Sequence
 from typing import List, Optional, Tuple, Union
 import transformers
 from dataclasses import dataclass, field
-from Model.RegionRG_MaskEncoder_best.multimodality_model import RegionLLM
+from Model.Reg2RG import Reg2RG
 from Dataset.radgenome_dataset_test import RadGenomeDataset_Test
 # from args.test_combined_region_radgenome.superpod import ModelArguments, DataArguments
-from args.test_combined_region_radgenome.jhcpu1 import ModelArguments, DataArguments
+from args.test_radgenome.jhcpu7 import ModelArguments, DataArguments
 import torch
 from torch.utils.data import DataLoader
 from safetensors import safe_open
@@ -107,7 +107,7 @@ def main():
         inferenced_id = df["AccNum"].tolist()
     else:
         # 创建一个空的DataFrame
-        df = pd.DataFrame(columns=["AccNum", "Question", "GT_whole_report", "Pred_whole_report"])
+        df = pd.DataFrame(columns=["AccNum", "Question", "GT_combined_report", "Pred_combined_report"])
         df.to_csv(data_args.result_path, index=False)
         inferenced_id = []
 
@@ -135,17 +135,12 @@ def main():
 
     print("Setup Model")
 
-    model = RegionLLM(
+    model = Reg2RG(
         text_tokenizer_path=model_args.tokenizer_path,
         lang_model_path=model_args.lang_encoder_path,
         pretrained_visual_encoder=model_args.pretrained_visual_encoder,
         pretrained_adapter=model_args.pretrained_adapter,
     )
-
-    # for batch in tqdm.tqdm(Test_dataloader):
-    #     # 将张量保存为 NIfTI 文件
-    #     model.generate(batch["lang_x"], batch["vision_x"], batch["region2area"])
-    #     pass
 
     ckpt = torch.load(model_args.ckpt_path, map_location='cpu')
     model.load_state_dict(ckpt, strict=True)
@@ -159,14 +154,13 @@ def main():
         acc_num = sample["acc_num"][0]
         question = sample["question"][0]
         lang_x = sample["lang_x"].cuda()
-        attention_mask = torch.ones_like(lang_x).cuda()
         # 循环遍历每个区域，移动到GPU上
         vision_x = {area: _.cuda() for area, _ in sample["vision_x"].items()}
         mask_x = {area: _.cuda() for area, _ in sample["mask_x"].items()}
         region2area = sample["region2area"]
         gt_combined_report = sample["gt_combined_report"][0]
         
-        pred_combined_reports = model.generate(lang_x, attention_mask, vision_x, mask_x, region2area)
+        pred_combined_reports = model.generate(lang_x, vision_x, mask_x, region2area)
         pred_combined_report = pred_combined_reports[0]
 
         print('AccNum: ', acc_num)
@@ -175,7 +169,7 @@ def main():
         
         # 将数据添加到DataFrame中并保存到CSV文件
         new_data = pd.DataFrame([[acc_num, question, gt_combined_report, pred_combined_report]], 
-                                columns=["AccNum", "Question", "GT_whole_report", "Pred_whole_report"])
+                                columns=["AccNum", "Question", "GT_combined_report", "Pred_combined_report"])
         new_data.to_csv(data_args.result_path, mode='a', header=False, index=False)
 
 
