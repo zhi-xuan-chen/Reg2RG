@@ -12,7 +12,6 @@ pip install -r requirements.txt
 
 ## 📁 Data Preparation
 The **RadGenome‑ChestCT** dataset used in this work can be downloaded from the Hugging Face hub:
-
 <https://huggingface.co/datasets/RadGenome/RadGenome-ChestCT>
 
 ## 🗄️ Model Checkpoints
