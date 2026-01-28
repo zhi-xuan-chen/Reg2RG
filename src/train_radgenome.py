@@ -7,7 +7,7 @@ from transformers import Trainer
 from dataclasses import dataclass, field
 from Model.Reg2RG import Reg2RG
 from Dataset.radgenome_dataset_train import RadGenomeDataset_Train
-from args.train_radgenome.jhcpu7 import ModelArguments, DataArguments, TrainingArguments
+from args.train_radgenome.hoangnv import ModelArguments, DataArguments, TrainingArguments
 import numpy as np
 import torch              
 import random
@@ -102,6 +102,16 @@ def main():
         csv_file=data_args.report_file,
         cache_dir=data_args.monai_cache_dir,
     )
+    
+    # Setup validation dataset for evaluation during training
+    print("Setup Validation Data")
+    Val_dataset = RadGenomeDataset_Train(
+        text_tokenizer=model_args.tokenizer_path,
+        data_folder=data_args.val_data_folder,
+        mask_folder=data_args.val_mask_folder,
+        csv_file=data_args.val_report_file,
+        cache_dir=data_args.monai_cache_dir,
+    )
 
     print("Setup Model")
     model = Reg2RG(
@@ -112,8 +122,9 @@ def main():
     )
     
     trainer = Trainer(model=model, 
-                      train_dataset = Train_dataset, 
-                      args = training_args,
+                      train_dataset=Train_dataset,
+                      eval_dataset=Val_dataset,  # Add validation dataset
+                      args=training_args,
                       data_collator=DataCollator(),
                       )
 

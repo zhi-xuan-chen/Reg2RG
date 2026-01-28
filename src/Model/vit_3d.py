@@ -112,6 +112,8 @@ class ViT(nn.Module):
 
     def forward(self, video):
         B, C, H, W, D = video.shape
+        # Cast to the dtype of the first LayerNorm to avoid dtype mismatch in mixed precision training hoangnv
+        video = video.to(dtype=self.to_patch_embedding[1].weight.dtype)
         x = self.to_patch_embedding(video)
         b, n, _ = x.shape
 
