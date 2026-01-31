@@ -25,7 +25,7 @@ After the data and checkpoints are ready, you can inference the model on **RadGe
 2. Run:
    ```bash
    cd scripts
-   bash test_radgenome.sh [your_config_name]
+   bash test_radgenome.sh hoangnv
    ```
 
 ## 📊 Evaluation
@@ -71,11 +71,11 @@ After inference, evaluate the generated reports with the scripts in the `evaluat
 You can fine‑tune the model on your own dataset using our pre‑trained checkpoint.
 
 1. Add your dataset class to `src/Dataset/`, following the style of the existing datasets.  
-2. Create a config `[your_config_name].sh` in `configs/train_radgenome/` (copy and adjust `configs/train_radgenome/jhcpu7.sh`).  
+2. Create a config `hoangnv.sh` in `configs/train_radgenome/` (copy and adjust `configs/train_radgenome/jhcpu7.sh`).  
 3. Run the training script:
    ```bash
    cd scripts
-   bash train_radgenome.sh [your_config_name]
+   bash train_radgenome.sh hoangnv
    ```
 
 ## 📄 Citation

@@ -26,7 +26,7 @@ def extract_region_area_dict(text):
 
     return region_dict  
 
-results_path = "/home/zchenhi/Workspace/FineGrainedCTRG/results/regionRG-radfm_ctrg_mask-crop-regions-image.csv"
+results_path = "../results/regionRG-radfm_ctrg_mask-crop-regions-image.csv"
 df = pd.read_csv(results_path)
 
 gt_combined_reports = df["GT_whole_report"].tolist()
