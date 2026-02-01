@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 from Model.Reg2RG import Reg2RG
 from Dataset.radgenome_dataset_test import RadGenomeDataset_Test
 # from args.test_combined_region_radgenome.superpod import ModelArguments, DataArguments
-from args.test_radgenome.jhcpu7 import ModelArguments, DataArguments
+from args.test_radgenome.hoangnv import ModelArguments, DataArguments
 import torch
 from torch.utils.data import DataLoader
 from safetensors import safe_open

@@ -45,7 +45,7 @@ def parse_report_by_name(report_text):
 
 
 # Input CSV file containing combined reports
-combined_report_file = '/home/chenzhixuan/Workspace/Reg2RG/results/radgenome_combined_reports.csv'
+combined_report_file = '../results/radgenome_test_results_rm_region_text.csv'
 results_dir = os.path.dirname(combined_report_file)
 
 # Read input CSV file

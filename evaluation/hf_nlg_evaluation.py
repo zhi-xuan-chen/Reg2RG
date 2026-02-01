@@ -21,7 +21,7 @@ bleu = evaluate.load("bleu")
 meteor = evaluate.load("meteor")
 rouge = evaluate.load("rouge")
 
-results_path = "/home/chenzhixuan/Workspace/Reg2RG/results/radgenome_combined_reports_rm_region_text.csv"
+results_path = "../results/radgenome_test_results_rm_region_text.csv"
 
 gt_report_column = 'GT_combined_report'
 pred_report_column = 'Pred_combined_report'

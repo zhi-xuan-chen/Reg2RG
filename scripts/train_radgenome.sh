@@ -29,19 +29,29 @@ CUDA_VISIBLE_DEVICES=$cuda_devices torchrun --nproc_per_node=$nproc_per_node --m
     --data_folder "$data_folder" \
     --mask_folder "$mask_folder" \
     --report_file "$report_file" \
+    --val_data_folder "$val_data_folder" \
+    --val_mask_folder "$val_mask_folder" \
+    --val_report_file "$val_report_file" \
     --monai_cache_dir "$monai_cache_dir" \
     --output_dir "$output_dir" \
     --deepspeed "$deepspeed_config" \
     --per_device_train_batch_size $per_device_train_batch_size \
+    --per_device_eval_batch_size $per_device_eval_batch_size \
     --num_train_epochs $num_train_epochs \
     --gradient_accumulation_steps $gradient_accumulation_steps \
     --evaluation_strategy "$evaluation_strategy" \
+    --eval_steps $eval_steps \
     --save_strategy "$save_strategy" \
+    --save_steps $save_steps \
     --save_total_limit $save_total_limit \
+    --load_best_model_at_end $load_best_model_at_end \
+    --metric_for_best_model "$metric_for_best_model" \
+    --greater_is_better $greater_is_better \
     --learning_rate $learning_rate \
     --weight_decay $weight_decay \
     --warmup_steps $warmup_steps \
     --lr_scheduler_type "$lr_scheduler_type" \
     --dataloader_num_workers $dataloader_num_workers \
     --run_name "$experiment_name" \
-    --logging_steps $logging_steps
+    --logging_steps $logging_steps \
+    --logging_strategy "$logging_strategy"

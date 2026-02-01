@@ -2,7 +2,7 @@ import pandas as pd
 import re
 import os
 
-results_path = "/home/chenzhixuan/Workspace/Reg2RG/results/radgenome_combined_reports.csv"
+results_path = "../results/radgenome_test_results.csv"
 df = pd.read_csv(results_path)
 
 # 读取GT_combined_report和Pred_combined_report列

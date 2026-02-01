@@ -34,7 +34,7 @@ regions = [
     'trachea and bronchie'
 ]
 
-results_dir = "/home/chenzhixuan/Workspace/FineGrainedCTRG/results/regionRG-radfm_radgenome_mask-crop-regions-image_remain_wrong"
+results_dir = "../results"
 
 gt_report_column = 'GT_combined_report'
 pred_report_column = 'Pred_combined_report'
